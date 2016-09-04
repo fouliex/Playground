@@ -1,0 +1,68 @@
+group 'com.ge.predix.mobility'
+version '1.0'
+
+// Appends the build number from Jenkins CI if available, otherwise defaults to "0"
+def buildnumber = System.getenv("BUILD_NUMBER") ?: "0"
+version=version + "." + buildnumber
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: "jacoco"
+
+sourceCompatibility = 1.6
+targetCompatibility = 1.6
+
+test {
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+
+    finalizedBy jacocoTestReport
+}
+
+jacocoTestReport {
+    dependsOn Test
+    group = "verification"
+    additionalSourceDirs = files(sourceSets.main.allJava.srcDirs)
+    reports {
+        xml.enabled
+        csv.enabled false
+        html.destination "${buildDir}/reports/jacoco"
+    }
+    executionData = files("${buildDir}/jacoco/test.exec")
+}
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': project.name,
+                'Implementation-Version': project.version,
+                'Implementation-Vendor': 'GE Digital'
+    }
+}
+
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compile 'jetty:javax.servlet:5.1.12'
+    compile 'org.mortbay.jetty:jetty-runner:7.6.15.v20140411'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.couchbase.lite:couchbase-lite-java-core:1.2.1'
+    compile group: 'com.google.guava', name: 'guava', version: '19.0'
+    compile 'com.squareup.dagger:dagger:1.2.2'
+    compile 'com.squareup.dagger:dagger-compiler:1.2.2'
+    compile group: 'org.json', name: 'json', version: '20160212'
+    compile group: 'com.squareup.okhttp', name: 'okhttp-urlconnection', version: '2.7.5'
+    compile group: 'com.google.guava', name: 'guava', version: '11.0.2'
+    compile group: 'commons-io', name: 'commons-io', version: '2.5'
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.powermock:powermock-api-mockito:1.6.5'
+    testCompile 'org.powermock:powermock-module-junit4:1.6.5'
+    testCompile 'org.mockito:mockito-core:1.10.19'
+    testCompile 'com.couchbase.lite:couchbase-lite-java:1.2.1'
+    testCompile 'com.couchbase.lite:couchbase-lite-java-sqlcipher:1.2.1'
+    testCompile 'com.couchbase.lite:couchbase-lite-java-sqlite-custom:1.2.1'
+}
