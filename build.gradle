@@ -1,42 +1,16 @@
-group 'com.ge.predix.mobility'
 version '1.0'
 
-// Appends the build number from Jenkins CI if available, otherwise defaults to "0"
-def buildnumber = System.getenv("BUILD_NUMBER") ?: "0"
-version=version + "." + buildnumber
 
 apply plugin: 'java'
 apply plugin: 'idea'
-apply plugin: "jacoco"
 
-sourceCompatibility = 1.6
-targetCompatibility = 1.6
 
-test {
-    testLogging {
-        events "passed", "skipped", "failed"
-    }
-
-    finalizedBy jacocoTestReport
-}
-
-jacocoTestReport {
-    dependsOn Test
-    group = "verification"
-    additionalSourceDirs = files(sourceSets.main.allJava.srcDirs)
-    reports {
-        xml.enabled
-        csv.enabled false
-        html.destination "${buildDir}/reports/jacoco"
-    }
-    executionData = files("${buildDir}/jacoco/test.exec")
-}
 
 jar {
     manifest {
         attributes 'Implementation-Title': project.name,
                 'Implementation-Version': project.version,
-                'Implementation-Vendor': 'GE Digital'
+                'Implementation-Vendor': 'fouliex playground'
     }
 }
 

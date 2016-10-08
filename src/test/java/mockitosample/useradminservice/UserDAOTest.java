@@ -2,11 +2,10 @@ package mockitosample.useradminservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.powermock.api.mockito.PowerMockito;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import static org.powermock.api.mockito.PowerMockito.*;
 
 /**
@@ -17,12 +16,12 @@ import static org.powermock.api.mockito.PowerMockito.*;
 public class UserDAOTest {
 
     @Test
-    public void createShouldReturnAUserID(){
+    public void createShouldReturnAUserID() {
         UserDAO userDAO = new UserDAO();
         mockStatic(IDGenerator.class);
         when(IDGenerator.generateID()).thenReturn(1);
-        int result =userDAO.create(new User());
-        assertEquals(1,result);
+        int result = userDAO.create(new User());
+        assertEquals(1, result);
         verifyStatic();
 
     }
