@@ -10,16 +10,16 @@ public class EmployeeDAO {
     DatabaseConnectionManager connectionManager;
 
     public void saveEmployee(Employee emp) {
-        DatabaseConnectionManager connectionManager = DatabaseConnectionManager.getManagerInstance();
+     /*   DatabaseConnectionManager connectionManager = DatabaseConnectionManager.getManagerInstance();
         connectionManager.connect();
         // TODO add query
         connectionManager.getConnectionObject();
-        connectionManager.disconnect();
+        connectionManager.disconnect(); */
         System.out.println("save employee to the database " + emp);
     }
 
     public void deleteEmploye(Employee emp) {
-        System.out.println("delete employee from the database " + emp );
+        System.out.println("delete employee from the database " + emp);
 
     }
 }
