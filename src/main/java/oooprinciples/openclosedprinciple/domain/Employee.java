@@ -3,7 +3,7 @@ package oooprinciples.openclosedprinciple.domain;
 /**
  * Created by fouli on 10/11/2016.
  */
-public class Employee {
+abstract public class Employee {
     private long id;
     private String name;
     private String department;
@@ -15,6 +15,7 @@ public class Employee {
         this.department = department;
         this.working = working;
     }
+abstract public void performDuties();
 
     @Override
     public String toString() {
