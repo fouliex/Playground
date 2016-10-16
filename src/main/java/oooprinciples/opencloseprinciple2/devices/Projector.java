@@ -12,7 +12,7 @@ public class Projector implements Device {
 
     @Override
     public void turnOn() {
-      pullDownProjectorScreen();
+        pullDownProjectorScreen();
         System.out.println("Projector has been turned on.");
     }
 
@@ -23,7 +23,7 @@ public class Projector implements Device {
     }
 
     /**
-     * Below are additional steps that may be required for you to operate your device
+     * Below are additional steps that are specific to the device
      */
     private void pullDownProjectorScreen() {
         System.out.println("Screen has been lowered for viewing");
