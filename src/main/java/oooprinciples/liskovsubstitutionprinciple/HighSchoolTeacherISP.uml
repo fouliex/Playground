@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>oooprinciples.liskovsubstitutionprinciple.CourseInstructor</OriginalElement>
+  <nodes>
+    <node x="191.94791666666674" y="54.0">oooprinciples.liskovsubstitutionprinciple.SubstituteTeacher</node>
+    <node x="-53.75" y="-156.0">oooprinciples.liskovsubstitutionprinciple.SchoolStaff</node>
+    <node x="-174.0" y="43.0">oooprinciples.liskovsubstitutionprinciple.ScienceTeaher</node>
+    <node x="-211.75" y="-112.0">oooprinciples.liskovsubstitutionprinciple.CourseInstructor</node>
+    <node x="44.375" y="43.0">oooprinciples.liskovsubstitutionprinciple.MathTeacher</node>
+    <node x="-321.0" y="43.0">oooprinciples.liskovsubstitutionprinciple.EnglishTeacher</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="oooprinciples.liskovsubstitutionprinciple.EnglishTeacher" target="oooprinciples.liskovsubstitutionprinciple.SchoolStaff">
+      <point x="31.75" y="-25.5" />
+      <point x="-225.75" y="13.0" />
+      <point x="-15.375" y="13.0" />
+      <point x="-115.125" y="69.5" />
+    </edge>
+    <edge source="oooprinciples.liskovsubstitutionprinciple.ScienceTeaher" target="oooprinciples.liskovsubstitutionprinciple.CourseInstructor">
+      <point x="-31.25" y="-25.5" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="oooprinciples.liskovsubstitutionprinciple.SubstituteTeacher" target="oooprinciples.liskovsubstitutionprinciple.SchoolStaff">
+      <point x="0.0" y="-14.5" />
+      <point x="264.44791666666674" y="23.0" />
+      <point x="214.875" y="23.0" />
+      <point x="115.125" y="69.5" />
+    </edge>
+    <edge source="oooprinciples.liskovsubstitutionprinciple.MathTeacher" target="oooprinciples.liskovsubstitutionprinciple.CourseInstructor">
+      <point x="-31.25" y="-25.5" />
+      <point x="75.625" y="3.0" />
+      <point x="-96.75" y="3.0" />
+      <point x="46.0" y="25.5" />
+    </edge>
+    <edge source="oooprinciples.liskovsubstitutionprinciple.EnglishTeacher" target="oooprinciples.liskovsubstitutionprinciple.CourseInstructor">
+      <point x="-31.75" y="-25.5" />
+      <point x="-289.25" y="3.0" />
+      <point x="-188.75" y="3.0" />
+      <point x="-46.0" y="25.5" />
+    </edge>
+    <edge source="oooprinciples.liskovsubstitutionprinciple.MathTeacher" target="oooprinciples.liskovsubstitutionprinciple.SchoolStaff">
+      <point x="31.25" y="-25.5" />
+      <point x="38.375" y="69.5" />
+    </edge>
+    <edge source="oooprinciples.liskovsubstitutionprinciple.ScienceTeaher" target="oooprinciples.liskovsubstitutionprinciple.SchoolStaff">
+      <point x="31.25" y="-25.5" />
+      <point x="-80.25" y="23.0" />
+      <point x="61.375" y="23.0" />
+      <point x="-38.375" y="69.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="69.0" y="14.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
