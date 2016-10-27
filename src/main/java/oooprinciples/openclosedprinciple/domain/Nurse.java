@@ -31,4 +31,6 @@ public class Nurse extends Employee {
     private void cleanPatientArea() {
         System.out.println("Cleaning Patient area");
     }
+
+
 }

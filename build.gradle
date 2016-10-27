@@ -21,6 +21,7 @@ repositories {
 }
 
 dependencies {
+    compile group: 'org.springframework', name: 'spring-context', version: '4.3.3.RELEASE'
     compile 'jetty:javax.servlet:5.1.12'
     compile 'org.mortbay.jetty:jetty-runner:7.6.15.v20140411'
     compile fileTree(include: ['*.jar'], dir: 'libs')

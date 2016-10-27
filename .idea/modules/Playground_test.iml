@@ -10,6 +10,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="Playground_main" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-context:4.3.3.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: jetty:javax.servlet:5.1.12" level="project" />
     <orderEntry type="library" name="Gradle: org.mortbay.jetty:jetty-runner:7.6.15.v20140411" level="project" />
     <orderEntry type="library" name="Gradle: com.couchbase.lite:couchbase-lite-java-core:1.2.1" level="project" />
@@ -26,6 +27,10 @@
     <orderEntry type="library" name="Gradle: com.couchbase.lite:couchbase-lite-java:1.2.1" level="project" />
     <orderEntry type="library" name="Gradle: com.couchbase.lite:couchbase-lite-java-sqlcipher:1.2.1" level="project" />
     <orderEntry type="library" name="Gradle: com.couchbase.lite:couchbase-lite-java-sqlite-custom:1.2.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-aop:4.3.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-beans:4.3.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-core:4.3.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Gradle: org.springframework:spring-expression:4.3.3.RELEASE" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-plus:7.6.15.v20140411" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-annotations:7.6.15.v20140411" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-jndi:7.6.15.v20140411" level="project" />
@@ -42,7 +47,6 @@
     <orderEntry type="library" name="Gradle: org.powermock:powermock-module-junit4-common:1.6.5" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.0-beta1" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpcore:4.0-beta2" level="project" />
-    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.1.3" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty.orbit:javax.transaction:1.1.1.v201105210645" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-webapp:7.6.15.v20140411" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty.orbit:javax.annotation:1.1.0.v201108011116" level="project" />
@@ -71,6 +75,7 @@
     <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-util:7.6.15.v20140411" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-security:7.6.15.v20140411" level="project" />
     <orderEntry type="library" name="Gradle: org.eclipse.jetty:jetty-io:7.6.15.v20140411" level="project" />
+    <orderEntry type="library" name="Gradle: commons-logging:commons-logging:1.2" level="project" />
     <orderEntry type="library" name="Gradle: org.objenesis:objenesis:2.2" level="project" />
   </component>
   <component name="TestModuleProperties" production-module="Playground_main" />
