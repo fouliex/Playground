@@ -1,4 +1,4 @@
-package designPatterns.domain;
+package designPatterns.oberverpattern.domain;
 
 import java.util.Date;
 

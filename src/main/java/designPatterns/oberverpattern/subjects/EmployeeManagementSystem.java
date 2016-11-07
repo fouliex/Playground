@@ -1,9 +1,9 @@
-package designPatterns.subjects;
+package designPatterns.oberverpattern.subjects;
 
 
-import designPatterns.domain.EmployeeDAO;
-import designPatterns.domain.Employee;
-import designPatterns.observers.IObserver;
+import designPatterns.oberverpattern.domain.EmployeeDAO;
+import designPatterns.oberverpattern.domain.Employee;
+import designPatterns.oberverpattern.observers.IObserver;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,10 +57,11 @@ public class EmployeeManagementSystem implements ISubject {
         observers.remove(removeIndex);
     }
 
-    
 
     @Override
     public void notifyObservers() {
-
+        for (IObserver department : observers) {
+            department.callMe(employee, msg);
+        }
     }
 }

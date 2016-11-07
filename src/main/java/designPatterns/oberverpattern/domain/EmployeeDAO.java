@@ -1,4 +1,4 @@
-package designPatterns.domain;
+package designPatterns.oberverpattern.domain;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +19,7 @@ public class EmployeeDAO {
     public List<Employee> generateEmployees() {
         employees = new ArrayList<>();
         employees.add(emp1);
+        employees.add(emp2);
         employees.add(emp3);
         employees.add(emp4);
         return employees;

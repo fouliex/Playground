@@ -1,6 +1,6 @@
-package designPatterns.subjects;
+package designPatterns.oberverpattern.subjects;
 
-import designPatterns.observers.IObserver;
+import designPatterns.oberverpattern.observers.IObserver;
 
 /**
  * Created by fouli on 10/30/2016.
