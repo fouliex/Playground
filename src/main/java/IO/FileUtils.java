@@ -177,24 +177,52 @@ public class FileUtils {
         }
     }
 
-    public void appendFile(String filename, String content) {
+    public void appendFileWithFileWriterAndBufferedWriter(String filename, String content) {
         File file = new File(filename);
         try {
             if (!file.exists()) {
                 file.createNewFile();
             }
-
             //Here true is to append the content to file
             FileWriter fileWriter = new FileWriter(file, true);
             //BufferedWriter  writer give better performance
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             bufferedWriter.write(content);
+            //Closing BufferedWriter Stream
             bufferedWriter.close();
+            System.out.println("Data successfully appended at the end of file");
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
+public void appendFileWithPrintWriter(String filename,String content){
+    try {
+
+
+        File file = new File(filename);
+        if (!file.exists()) {
+            file.createNewFile();
+        }
+
+        FileWriter fileWriter = new FileWriter(file,true);
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+        PrintWriter printWriter = new PrintWriter(bufferedWriter);
+        printWriter.println(content);
+
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+}
+
+public void deleteFile(String filename ) {
+    File file = new File(filename);
+    if (file.delete()) {
+        System.out.println(file.getName() + " is deleted!");
+    } else {
+        System.out.println("Delete failed: File didn't delete");
+    }
+}
 
     public static void main(String[] args) {
         String filename = "George.txt";
@@ -203,8 +231,10 @@ public class FileUtils {
         //fileUtils.readFileWithBufferedInputStream("George.txt");
         fileUtils.readFileWithBufferedInputStream(filename);
         fileUtils.writeFileWithBufferedWriter(filename, "Salutfds George ca vas");
-
+        fileUtils.appendFileWithFileWriterAndBufferedWriter(filename,"\nComment ca vas");
+        fileUtils.readFileWithBufferedInputStream(filename);
     }
+
 
 
 }
