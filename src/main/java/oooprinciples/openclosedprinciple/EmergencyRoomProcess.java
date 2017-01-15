@@ -3,7 +3,7 @@ package oooprinciples.openclosedprinciple;
 import oooprinciples.openclosedprinciple.domain.Doctor;
 import oooprinciples.openclosedprinciple.domain.Employee;
 import oooprinciples.openclosedprinciple.domain.Nurse;
-import oooprinciples.openclosedprinciple.domain.Technician;
+
 
 /**
  * Created by fouli on 10/15/2016.
@@ -18,8 +18,6 @@ public class EmergencyRoomProcess {
         Employee suzan = new Doctor(2, "Suzan", "emergency", true);
         ERDirector.callUpon(suzan);
 
-        System.out.println("GEORGE + TEJ");
-        Employee Tej = new Technician(2,"Tej","emergency",true);
-        ERDirector.callUpon(Tej);
+
     }
 }
