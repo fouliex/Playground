@@ -21,6 +21,19 @@ public class Sorter {
         return data;
     }
 
+    public int[] insertionSort() {
+        for (int i = 1; i < data.length; i++) {
+            int j = i;
+            int toInsert = data[i];
+            while ((j > 0) && (data[j - 1] > toInsert)) {
+                data[j] = data[j - 1];
+                j--;
+            }
+            data[j] = toInsert;
+        }
+        return data;
+    }
+
     private void swap(int indexOne, int indexTwo) {
         int temp = data[indexOne];
         data[indexOne] = data[indexTwo];

@@ -17,10 +17,14 @@ import static org.junit.Assert.assertEquals;
 public class SorterTest {
     String unordered;
     String ordered;
+    String[] stringArray;
+    int[] data;
 
     public SorterTest(String unordered, String ordered) {
         this.unordered = unordered;
         this.ordered = ordered;
+        this.stringArray = unordered.split(",");
+        this.data = convertStringArrayToIntArray(stringArray,10);
     }
 
     @Parameters
@@ -33,12 +37,18 @@ public class SorterTest {
 
     @Test
     public void testBubbleSort() {
-        String[] stringArray = unordered.split(",");
-        int[] data = convertStringArrayToIntArray(stringArray,10);
         Sorter sorter = new Sorter(data);
         data = sorter.bubbleSort();
-        String[] stringArray2 = convertIntArrayToStringArray(data,10);
-        assertEquals(ordered, convertStringArrayToString(stringArray2));
+        String[] stringArray = convertIntArrayToStringArray(data,10);
+        assertEquals(ordered, convertStringArrayToString(stringArray));
+    }
+
+    @Test
+    public void testInsertionSort(){
+        Sorter sorter = new Sorter(data);
+        data = sorter.insertionSort();
+        String[] stringArrays =convertIntArrayToStringArray(data,10);
+        assertEquals(ordered,convertStringArrayToString(stringArrays));
     }
 
     private int[] convertStringArrayToIntArray(String[] stringArray,int arraySize) {
