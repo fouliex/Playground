@@ -51,6 +51,14 @@ public class SorterTest {
         assertEquals(ordered,convertStringArrayToString(stringArrays));
     }
 
+    @Test
+    public void testSelectionSort(){
+        Sorter sorter = new Sorter(data);
+        data = sorter.insertionSort();
+        String[] stringArray = convertIntArrayToStringArray(data,10);
+        assertEquals(ordered,convertStringArrayToString(stringArray));
+    }
+
     private int[] convertStringArrayToIntArray(String[] stringArray,int arraySize) {
         int[] data = new int[arraySize];
         for (int i = 0; i < stringArray.length; i++) {
