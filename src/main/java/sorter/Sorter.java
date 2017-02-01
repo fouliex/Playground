@@ -47,6 +47,8 @@ public class Sorter {
         return theArray;
     }
 
+
+
     private void swap(int indexOne, int indexTwo) {
         int temp = theArray[indexOne];
         theArray[indexOne] = theArray[indexTwo];

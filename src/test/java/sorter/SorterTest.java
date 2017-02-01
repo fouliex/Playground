@@ -54,7 +54,7 @@ public class SorterTest {
     @Test
     public void testSelectionSort(){
         Sorter sorter = new Sorter(data);
-        data = sorter.insertionSort();
+        data = sorter.selectionSort();
         String[] stringArray = convertIntArrayToStringArray(data,10);
         assertEquals(ordered,convertStringArrayToString(stringArray));
     }
