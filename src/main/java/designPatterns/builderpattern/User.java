@@ -21,8 +21,11 @@ public class User {
     private User(Builder builder) {
         firstName = builder.firstName;
         lastName = builder.lastName;
-        userName = builder.userName;
-        emailAddress = builder.emailAddress;
+        this.userName = builder.userName;
+        this.emailAddress = builder.emailAddress;
+        this.phoneNumber = builder.phoneNumber;
+        this.address = builder.address;
+
     }
 
     @Override
@@ -71,11 +74,11 @@ public class User {
             phoneNumber = value;
             return this;
         }
-
         public Builder address(String value) {
             address = value;
             return this;
-        }
+
+      }
 
         public User build() {
             return new User(this);
