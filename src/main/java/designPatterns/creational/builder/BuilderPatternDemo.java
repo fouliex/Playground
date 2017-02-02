@@ -15,5 +15,28 @@ package designPatterns.creational.builder;
  * Created by fouli on 2/1/2017.
  */
 public class BuilderPatternDemo {
+    public static void main(String[] args) {
+
+        /**
+         * Vegetarian Meal
+         */
+        MealBuilder mealBuilder = new MealBuilder();
+        Meal vegMeal = mealBuilder.prepareVegMeal();
+        System.out.println("Veg Meal");
+        vegMeal.showItems();
+        System.out.println(" Total Cost: " + vegMeal.getCost());
+
+
+        /**
+         * Chicken Burger Meal
+         */
+        MealBuilder chickenBugerBuilder = new MealBuilder();
+        Meal chickenBurgerMeal = chickenBugerBuilder.prepapreNonVegMeal();
+        System.out.println("Chicken Burger Meal");
+        chickenBurgerMeal.showItems();
+        System.out.println(" Total Cost:" + chickenBurgerMeal.getCost());
+
+    }
+
 }
 
