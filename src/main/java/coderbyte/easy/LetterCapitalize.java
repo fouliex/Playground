@@ -1,7 +1,7 @@
 package coderbyte.easy;
 
 /**
- * Have a function tthat take a sentence and then capitalize the first letter of each word.
+ * Have a function that take a sentence and then capitalize the first letter of each word.
  * Created by fouli on 7/30/2017.
  */
 public class LetterCapitalize {
@@ -25,5 +25,4 @@ public class LetterCapitalize {
         }
         return stringBuilder.toString().trim();
     }
-
 }
