@@ -8,4 +8,10 @@ package coderbyte.easy;
  * Created by fouli on 8/2/2017.
  */
 public class TimeConvert {
+
+    public String convert(int num) {
+        return String.format("%d:%d", num / 60, num % 60);
+    }
 }
+
+
