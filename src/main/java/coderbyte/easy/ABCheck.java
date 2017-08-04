@@ -10,7 +10,7 @@ package coderbyte.easy;
  */
 public class ABCheck {
     public boolean has3CharactersBetweenAB(String sentence) {
-        char[] temp = toString().toCharArray();
+        char[] temp = sentence.toCharArray();
         for (int i = 0; i < sentence.length() - 1; i++) {
             if (temp[i] == 'a' && temp[i + 4] == 'b') {
                 return true;
