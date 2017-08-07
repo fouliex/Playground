@@ -14,22 +14,22 @@ import static org.junit.Assert.*;
  */
 @RunWith(Parameterized.class)
 public class WordCountTest {
-    private String word;
+    private String sentence;
     private int wordLength;
 
-    public WordCountTest(String word, int wordLength) {
-        this.word = word;
+    public WordCountTest(String sentence, int wordLength) {
+        this.sentence = sentence;
         this.wordLength = wordLength;
     }
 
     @Parameterized.Parameters
     public static Collection<Object[]> data() {
-        return Arrays.asList(new Object[][]{{"Alligator", 8}});
+        return Arrays.asList(new Object[][]{{"Hello Word", 2}});
     }
 
     @Test
     public void test() {
         WordCount wordCount = new WordCount();
-        assertEquals(wordLength, wordCount.countsWord(word));
+        assertEquals(wordLength, wordCount.countsWord(sentence));
     }
 }
