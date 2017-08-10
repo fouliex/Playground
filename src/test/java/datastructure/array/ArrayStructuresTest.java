@@ -31,4 +31,23 @@ public class ArrayStructuresTest {
         assertTrue(arrayStructures.doesArrayContainThisValue(10));
     }
 
+    @Test
+    public void testLinearSearchMethod() {
+        int[] theArray = {1, 2, 3, 4, 5, 6, 7};
+        ArrayStructures arrayStructures = new ArrayStructures(theArray, 7);
+        String actualValue = arrayStructures.linearSearch(3);
+        String expectedValue = "Value 3 is as index: 2";
+        assertEquals(expectedValue, actualValue);
+    }
+
+    @Test
+    public void testBinarySearchMethod(){
+        int[] theArray = {1, 2, 3, 4, 5, 6, 7};
+        ArrayStructures arrayStructures = new ArrayStructures(theArray, 7);
+        String actualValue  = arrayStructures.binarySearch(3);
+        String expectedValue = "Value 3 is as index: 2";
+        assertEquals(expectedValue,actualValue);
+    }
+
+
 }

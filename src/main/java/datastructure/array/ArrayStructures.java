@@ -7,11 +7,25 @@ public class ArrayStructures {
     private int[] theArray = new int[50];
     private int arraySize = 10;
 
+    public ArrayStructures() {
+
+    }
+
+    public ArrayStructures(int[] theArray, int arraySize) {
+        this.theArray = theArray;
+        this.arraySize = arraySize;
+    }
+
     public void generateRandomArray() {
         for (int i = 0; i < arraySize; i++) {
             theArray[i] = (int) (Math.random() * 10) + 10;
         }
     }
+
+    public int[] getTheArray() {
+        return theArray;
+    }
+
 
     public void insertValue(int value) {
         if (arraySize < 50) {
@@ -46,7 +60,39 @@ public class ArrayStructures {
         return valueInArray;
     }
 
+    public String linearSearch(int value) {
 
+        for (int i = 0; i < arraySize; i++) {
+            if (theArray[i] == value) {
+                return "Value " + value + " is as index: " + i;
+            }
+        }
+        return "Value " + value + "does not exist";
+    }
+
+
+    public String binarySearch(int value) {
+        int lowIndex = 0;
+        int highIndex = arraySize - 1;
+        int middleIndex = 0;
+
+        while (lowIndex <= highIndex) {
+            middleIndex = (highIndex + lowIndex) / 2;
+            if (theArray[middleIndex] < value) {
+                lowIndex = middleIndex + 1;
+            } else if (theArray[middleIndex] > value) {
+                highIndex = middleIndex - 1;
+            } else {
+                lowIndex = highIndex + 1;
+            }
+
+        }
+        if (middleIndex == 0) {
+            return "Value " + value + "does not exist";
+        }
+        return "Value " + value + " is as index: " + middleIndex;
+
+    }
 
     public void printArray() {
         System.out.println("----------");

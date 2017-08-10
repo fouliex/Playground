@@ -1,4 +1,4 @@
-package sorter;
+package datastructure.sorter;
 
 /**
  * Created by George Fouche on 1/15/17.
