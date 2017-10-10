@@ -10,7 +10,7 @@ public class Factorial {
         if (num == 1) {
             return 1;
         }
-        result = fact(num - 1) * num;
+        result =  num * fact(num - 1) ;
         return result;
     }
 
