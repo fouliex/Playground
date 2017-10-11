@@ -1,4 +1,4 @@
-package codeproblems;
+package SpecialCodeProblems;
 
 import java.util.Arrays;
 
