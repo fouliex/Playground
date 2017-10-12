@@ -56,8 +56,8 @@ public class MakingChange {
             return 0;
         }
 
-        System.out.println(String.format("checking ways to make %d with %s",
-                amountLeft, Arrays.toString(Arrays.copyOfRange(denominations, currentIndex, denominations.length))));
+      /*  System.out.println(String.format("checking ways to make %d with %s",
+                amountLeft, Arrays.toString(Arrays.copyOfRange(denominations, currentIndex, denominations.length))));*/
 
         // choose a current coin
         int currentCoin = denominations[currentIndex];
@@ -75,11 +75,11 @@ public class MakingChange {
     }
 
     /**
-     *
-     *This solution  solves  our duplicate problem  with memoization and takes O(n *m) time and O(n*M) space,where n is the size of amount
+     * This solution  solves  our duplicate problem  with memoization and takes O(n *m) time and O(n*M) space,where n is the size of amount
      * m is the number of items in denominations.
-     *
+     * <p>
      * However because the method is recursive it will build up a large call stack.
+     *
      * @param amountLeft
      * @param denominations
      * @param currentIndex
@@ -108,8 +108,8 @@ public class MakingChange {
             return 0;
         }
 
-        System.out.println(String.format("checking ways to make %d with %s",
-                amountLeft, Arrays.toString(Arrays.copyOfRange(denominations, currentIndex, denominations.length))));
+        /*System.out.println(String.format("checking ways to make %d with %s",
+                amountLeft, Arrays.toString(Arrays.copyOfRange(denominations, currentIndex, denominations.length))));*/
 
 
         // choose a current coin
@@ -128,17 +128,30 @@ public class MakingChange {
     }
 
     /**
-     * A great way to ovoid recursion is to go bottom-up
-     * @param args
+     * 
+     * @param amount
+     * @param denominations
+     * @return
      */
+    public static int changePossibilitiesBottomUp(int amount, int[] denominations) {
+        int[] waysOfDoingNCents = new int[amount + 1]; // array of zeros from 0...amount
+        waysOfDoingNCents[0] = 1;
 
-
+        for (int coin : denominations) {
+            for (int higherAmount = coin; higherAmount <= amount; higherAmount++) {
+                int higherAmountRemainder = higherAmount - coin;
+                waysOfDoingNCents[higherAmount] += waysOfDoingNCents[higherAmountRemainder];
+            }
+        }
+        return waysOfDoingNCents[amount];
+    }
 
 
     public static void main(String[] args) {
-        int[] denomination = {1, 2, 3};
+        int[] denominations = {1, 2, 3};
         MakingChange makingChange = new MakingChange();
-        System.out.println(makingChange.numberOfWays(4, denomination));
+        System.out.println(makingChange.numberOfWays(4, denominations));
+        System.out.println(makingChange.changePossibilitiesBottomUp(4, denominations));
 
     }
 }
