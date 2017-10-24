@@ -85,7 +85,7 @@ public class AppleStockProblem {
         }
 
         //Greedily update the minPrice and maxPrice and maximize them to
-        // the first and first maximum profit
+        // the first price and the first possible profit
         int minPrice = stockPricesYesterday[0];
         int maxProfit = stockPricesYesterday[1] - stockPricesYesterday[0];
 
