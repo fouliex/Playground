@@ -47,8 +47,6 @@ public class FoodDistribution {
         }
 
 
-
-
         System.out.println("Total food: " + totalFood);
         System.out.print("Number of Hunger array: ");
         System.out.println(Arrays.toString(numberOfHunger));
