@@ -59,16 +59,55 @@ public class AppleStockProblem {
         return maxProfit;
     }
 
-    public static int getMaxProfitExample3(int[] stockPricesYesterday){
+    /**
+     *
+     *
+     * @param stockPricesYesterday
+     * @return
+     */
+    public static int getMaxProfitExample3(int[] stockPricesYesterday) {
         int maxProfit = 0;
         int minPrice = stockPricesYesterday[0];
 
-        for(int currentPrice : stockPricesYesterday){
-             minPrice = Math.min(minPrice,currentPrice);
+        for (int currentPrice : stockPricesYesterday) {
+            minPrice = Math.min(minPrice, currentPrice);
 
             int potentialProfit = currentPrice - minPrice;
-            maxProfit = Math.max(maxProfit,potentialProfit);
+            maxProfit = Math.max(maxProfit, potentialProfit);
         }
+        return maxProfit;
+    }
+
+    public static int getMaxProfitExample4(int[] stockPricesYesterday) {
+
+        if (stockPricesYesterday.length < 2) {
+            throw new IllegalArgumentException("Getting a profit require at least 2 prices");
+        }
+
+        //Greedily update the minPrice and maxPrice and maximize them to
+        // the first and first maximum profit
+        int minPrice = stockPricesYesterday[0];
+        int maxProfit = stockPricesYesterday[1] - stockPricesYesterday[0];
+
+        // start at the second (index 1) time
+        // we can't sell at the first time, since we must buy first,
+        // and we can't buy and sell at the same time!
+        // if we started at index 0, we'd try to buy *and* sell at time 0.
+        // this would give a profit of 0, which is a problem if our
+        // maxProfit is supposed to be *negative*--we'd return 0.
+        for (int i = 1; i < stockPricesYesterday.length; i++) {
+            int currentPrice = stockPricesYesterday[i];
+
+            //See What our profit will be if we bought at the min price and sold at the current price.
+            int potentialPrice = currentPrice - minPrice;
+
+            //update maxProfit if we can do better
+            maxProfit = Math.max(maxProfit, potentialPrice);
+
+            // update minPrice  so it's the lowest price we seen so far
+            minPrice = Math.min(minPrice, currentPrice);
+        }
+
         return maxProfit;
     }
 
@@ -77,5 +116,6 @@ public class AppleStockProblem {
         System.out.println(getMaxProfitExample1(stockPricesYesterday));
         System.out.println(getMaxProfitExample2(stockPricesYesterday));
         System.out.println(getMaxProfitExample3(stockPricesYesterday));
+        System.out.println(getMaxProfitExample4(stockPricesYesterday));
     }
 }
