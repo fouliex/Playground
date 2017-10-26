@@ -1,6 +1,5 @@
-package SpecialCodeProblems;
+package SpecialCodeProblems.ArrayAndString;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,7 +10,7 @@ import java.util.Map;
  * compute the number of ways to make the amount of money with coins with the available denominations.
  * <p>
  * For example:
- * For amount = 4($4) and denomination =[1,2,3](1¢,2¢,3¢) your program would output 4 - the number of ways to make $4
+ * For amount = 4(4¢) and denomination =[1,2,3](1¢,2¢,3¢) your program would output 4 - the number of ways to make $4
  * with those denominations
  * <p>
  * <p>
@@ -30,7 +29,7 @@ public class MakingChange {
     }
 
     /**
-     * As a recursive solution this solution often duplicate the work pf checking remaining change possibilities
+     * As a recursive solution this solution often duplicate the work of checking remaining change possibilities
      * For example, we check ways to make 2 with [3] twice.
      *
      * @param amountLeft

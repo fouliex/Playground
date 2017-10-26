@@ -1,4 +1,4 @@
-package SpecialCodeProblems;
+package SpecialCodeProblems.ArrayAndString;
 
 /**
  * Write an efficient function that takes stockPricesYesterday and returns the best profit I could have made from 1 purchase

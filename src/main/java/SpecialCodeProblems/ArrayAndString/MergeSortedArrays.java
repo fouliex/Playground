@@ -1,4 +1,4 @@
-package SpecialCodeProblems;
+package SpecialCodeProblems.ArrayAndString;
 
 import java.util.Arrays;
 
