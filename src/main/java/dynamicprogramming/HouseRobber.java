@@ -65,11 +65,11 @@ public class HouseRobber {
 
     public static void main(String[] args) {
         // Most money we can steal is  1+3+5
-        int[] numbers = {1, 2, 3, 4, 5};
+        int[] numbers = {1, 2, 3, 4, 5,6,7,8};
         HouseRobber houseRobber = new HouseRobber();
-        System.out.println(houseRobber.rob(5, numbers));
-        System.out.println(houseRobber.rob2(5, numbers));
-        System.out.println(houseRobber.rob3(5, numbers));
+        System.out.println(houseRobber.rob(8, numbers));
+        System.out.println(houseRobber.rob2(8, numbers));
+        System.out.println(houseRobber.rob3(8, numbers));
         System.out.println(houseRobber.rob4( numbers));
 
     }
