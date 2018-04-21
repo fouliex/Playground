@@ -1,21 +1,28 @@
 package Recursion;
 
-/**
- * Created by George Fouche on 1/14/17.
- */
 public class Factorial {
 
-    int fact(int num) {
-        int result;
-        if (num == 1) {
-            return 1;
-        }
-        result =  num * fact(num - 1) ;
-        return result;
+
+    public int factorial(int n) {
+        return fact(1, n);
     }
 
+    private int fact(int accumulator, int n) {
+        if (n == 1) return accumulator;
+
+        return fact(accumulator * n, n - 1);
+    }
+
+    public int factorial2(int n) {
+        if (n == 1) return 1;
+
+        return n * factorial2(n - 1);
+    }
+
+
     public static void main(String[] args) {
-        Factorial factorial = new Factorial();
-        System.out.println(factorial.fact(4));
+        System.out.println(new Factorial().factorial2(4));
+        System.out.println(new Factorial().factorial(4));
+
     }
 }
