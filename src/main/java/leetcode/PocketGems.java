@@ -7,7 +7,7 @@ public class PocketGems {
     // Sort Colored balls https://leetcode.com/problems/sort-colors/description/
     // Matrix Traversal - Island
     // 139. Word Break https://leetcode.com/problems/word-break/description/
-    // 28. Implement strStr() https://leetcode.com/problems/implement-strstr/description/
+    // 28. Implement StrString() https://leetcode.com/problems/implement-strstr/description/
     // max sum subset from an ordered list, cannot skip 2+ consecutive items
     // given a list of numbers, add 1 to all but one number each step
     // A key - door path searching question. https://www.geeksforgeeks.org/shortest-path-in-a-binary-maze/
