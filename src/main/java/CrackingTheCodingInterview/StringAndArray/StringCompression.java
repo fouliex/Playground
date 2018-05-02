@@ -1,9 +1,9 @@
-package CrakingTheCodingInterview.stringandarray;
+package CrackingTheCodingInterview.StringAndArray;
 
 /**
- * Implement a method to perform basic stringandarray compression using the counts or repeated characters. For example, the
- * stringandarray aabccccaaa would become a2b1c3a3. if the "compressed" stringandarray would not become smaller than the original stringandarray,
- * your method should return the original stringandarray. You can assume the stringandarray has only uppercase and lowercase letters(a-z)
+ * Implement a method to perform basic StringAndArray compression using the counts or repeated characters. For example, the
+ * StringAndArray aabccccaaa would become a2b1c3a3. if the "compressed" StringAndArray would not become smaller than the original StringAndArray,
+ * your method should return the original StringAndArray. You can assume the StringAndArray has only uppercase and lowercase letters(a-z)
  */
 public class StringCompression {
 

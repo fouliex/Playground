@@ -1,4 +1,4 @@
-package CrakingTheCodingInterview.stringandarray;
+package CrackingTheCodingInterview.StringAndArray;
 
 /**
  * Given two strings, write a method to decide if one is permutation of the other

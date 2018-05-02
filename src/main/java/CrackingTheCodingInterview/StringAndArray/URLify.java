@@ -1,8 +1,8 @@
-package CrakingTheCodingInterview.stringandarray;
+package CrackingTheCodingInterview.StringAndArray;
 
 /**
- * Write a method to replace all spaces in a stringandarray with '%20'. You may assume that the stringandarray has sufficeint space at
- *  the end to hold the additional characters, and that you are given the  "true" length of the stringandarray.
+ * Write a method to replace all spaces in a StringAndArray with '%20'. You may assume that the StringAndArray has sufficeint space at
+ *  the end to hold the additional characters, and that you are given the  "true" length of the StringAndArray.
  *  Note: I fimplementing in Java, please
  */
 public class URLify {

@@ -1,9 +1,9 @@
-package CrakingTheCodingInterview.stringandarray;
+package CrackingTheCodingInterview.StringAndArray;
 
 import java.util.Arrays;
 
 /**
- * Implement an algorithm to determine if a stringandarray has all unique characters
+ * Implement an algorithm to determine if a StringAndArray has all unique characters
  */
 public class IsUnique {
 
