@@ -1,7 +1,7 @@
 package coderbyte.easy;
 
 /**
- * Have a function that takes  a string and return the number of words the string contains.
+ * Have a function that takes  a StringAndArray and return the number of words the StringAndArray contains.
  * Created by fouli on 8/6/2017.
  */
 public class WordCount {

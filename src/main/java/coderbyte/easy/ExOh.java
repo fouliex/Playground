@@ -1,7 +1,7 @@
 package coderbyte.easy;
 
 /**
- * Have a function that takes a string and return true if there's an equal number of x's and o's.
+ * Have a function that takes a StringAndArray and return true if there's an equal number of x's and o's.
  * Otherwise returns false
  * Created by fouli on 8/6/2017.
  */

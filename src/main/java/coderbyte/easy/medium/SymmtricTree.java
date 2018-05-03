@@ -11,7 +11,7 @@ package coderbyte.easy.medium;
  *   3 # #  3
  *
  *
- * For the input above, your program should return the string true because the binary tree is symmetric.
+ * For the input above, your program should return the StringAndArray true because the binary tree is symmetric.
  * Sample Test Cases
  * Input:"4", "3", "4"
  * Output:"false"

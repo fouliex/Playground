@@ -1,12 +1,12 @@
 package coderbyte.easy;
 
 /**
- * Have a function that take  a string parameter and determine that the string is an acceptable sequence by either
- * returning the string true or false.
+ * Have a function that take  a StringAndArray parameter and determine that the StringAndArray is an acceptable sequence by either
+ * returning the StringAndArray true or false.
  * <p>
- * The string parameter will be composed of + and = symbols with several letters between them( ie. ++d+====+c++==a)
- * and for the string to be true each letter must be surrounded by a + symbol. So the string to the left would be false.
- * The string will not be empty and will have at least one letter.
+ * The StringAndArray parameter will be composed of + and = symbols with several letters between them( ie. ++d+====+c++==a)
+ * and for the StringAndArray to be true each letter must be surrounded by a + symbol. So the StringAndArray to the left would be false.
+ * The StringAndArray will not be empty and will have at least one letter.
  * <p>
  * <p>
  * Created by fouli on 8/1/2017.

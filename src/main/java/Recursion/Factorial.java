@@ -21,7 +21,7 @@ public class Factorial {
 
 
     public static void main(String[] args) {
-        System.out.println(new Factorial().factorial2(4));
+        System.out.println(new Factorial().factorial2(100));
         System.out.println(new Factorial().factorial(4));
 
     }

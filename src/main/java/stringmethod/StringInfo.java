@@ -25,8 +25,8 @@ public class StringInfo {
      * getChars()
      * cf apiThe method getChars() is used for copying String characters to an Array of chars.
      * Parameters description:
-     * srcBegin - index of the first character in the string to copy.
-     * srcEnd - index after the last character in the string to copy
+     * srcBegin - index of the first character in the StringAndArray to copy.
+     * srcEnd - index after the last character in the StringAndArray to copy
      * dest - Destination array of characters in which the characters from String get copied.
      * destBegin - The index in Array starting from where the chars will be pushed into the Array.
      */

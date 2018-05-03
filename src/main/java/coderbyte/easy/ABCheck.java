@@ -1,8 +1,8 @@
 package coderbyte.easy;
 
 /**
- * Have a function take a string and return true if the characters a and b
- * are separated by excatly 3 places anywhere in the string at least once.
+ * Have a function take a StringAndArray and return true if the characters a and b
+ * are separated by excatly 3 places anywhere in the StringAndArray at least once.
  * <p>
  * For example "lane borrowed" would return true because there's exactly 3 characters
  * between a and b

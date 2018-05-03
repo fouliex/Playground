@@ -3,7 +3,7 @@ package coderbyte.easy;
 import java.util.ArrayList;
 
 /**
- * Have a function that takes a string and return the number of vowels the string contains
+ * Have a function that takes a StringAndArray and return the number of vowels the StringAndArray contains
  * <p>
  * For example "All cows eat grass" would return 5.
  * <p>

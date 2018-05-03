@@ -26,7 +26,7 @@ public class StrString {
     }
 
     public static void main(String[] args) {
-        System.out.println(new StrString().strStrExample1("This is a simple string","simple"));
+        System.out.println(new StrString().strStrExample1("This is a simple StringAndArray","simple"));
         System.out.println(new StrString().strStrExample2("hello","ll"));
     }
 }

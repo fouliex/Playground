@@ -1,7 +1,7 @@
 package coderbyte.easy;
 
 /**
- * Have a function that takes a string parameter and return the string in reversed order.
+ * Have a function that takes a StringAndArray parameter and return the StringAndArray in reversed order.
  * Created by fouli on 7/30/2017.
  */
 public class FirstReverse {

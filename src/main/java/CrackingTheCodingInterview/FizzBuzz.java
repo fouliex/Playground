@@ -1,4 +1,4 @@
-package codeproblems;
+package CrackingTheCodingInterview;
 
 /**
  * Write a program that prints the number from 1 to 100.
