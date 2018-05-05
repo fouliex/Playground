@@ -1,7 +1,35 @@
 package datastructure.linkedlist;
 
 import java.util.HashSet;
-import java.util.Iterator;
+
+
+class Node<Integer> {
+
+    private int data;
+    private Node<Integer> nextNode;
+
+    public Node(int data) {
+        this.data = data;
+    }
+
+    public int getData() {
+        return data;
+    }
+
+    public Node<Integer> getNextNode() {
+        return nextNode;
+    }
+
+    public void setNextNode(Node<Integer> nextNode) {
+        this.nextNode = nextNode;
+    }
+
+    @Override
+    public String toString() {
+        return  "Data:" + this.data ;
+    }
+}
+
 
 public class LinkedList<Integer> {
     private Node<Integer> head;
@@ -81,6 +109,7 @@ public class LinkedList<Integer> {
 
     public static void main(String[] args) {
            LinkedList list = new LinkedList();
+        System.out.println(list.getHead());
            list.addAtStart(2);
            list.addAtStart(10);
            list.addAtStart(5);
