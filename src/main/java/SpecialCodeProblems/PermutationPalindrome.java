@@ -4,12 +4,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Write an efficient function that checks whether any permutation of an input string is a palindrome.
+ * Write an efficient function that checks whether any permutation of an input StringAndArray is a palindrome.
  */
 public class PermutationPalindrome {
     /**
      * The approach is to check that each character appears an even number of times, allowing for only one characters to
-     * appear an odd number of times(a middle character). This is enough to determine if a permutation of the input string is a palindrome.
+     * appear an odd number of times(a middle character). This is enough to determine if a permutation of the input StringAndArray is a palindrome.
      *
      * @param str
      * @return

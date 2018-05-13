@@ -1,7 +1,7 @@
 package coderbyte.easy;
 
 /**
- * Have a function that takes 2 parameters and return the string true if num2 is greater than num1
+ * Have a function that takes 2 parameters and return the StringAndArray true if num2 is greater than num1
  * <p>
  * Created by fouli on 8/1/2017.
  */

@@ -1,4 +1,4 @@
-package codeproblems;
+package CrackingTheCodingInterview;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

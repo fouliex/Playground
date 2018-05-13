@@ -3,9 +3,9 @@ package coderbyte.easy;
 import java.util.HashMap;
 
 /**
- * Have a function that takes a string parameter and replace every letter in the string with the
+ * Have a function that takes a StringAndArray parameter and replace every letter in the StringAndArray with the
  * letter  following it in the alphabet(ie. c becomes d, z becomes a).Then capitalize every vowel in this
- * string(a,e,i,0,u) and finally return the modified string
+ * StringAndArray(a,e,i,0,u) and finally return the modified StringAndArray
  * Created by fouli on 7/30/2017.
  */
 public class LetterChanges {

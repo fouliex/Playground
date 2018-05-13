@@ -1,9 +1,9 @@
 package coderbyte.easy;
 
 /**
- * Have a function that takes a string  and return the string true if the parameter is a palindrome.
+ * Have a function that takes a StringAndArray  and return the StringAndArray true if the parameter is a palindrome.
  * <p>
- * Palindrome means that the string is the same forward as it is backward.
+ * Palindrome means that the StringAndArray is the same forward as it is backward.
  * <p>
  * Created by fouli on 8/6/2017.
  */

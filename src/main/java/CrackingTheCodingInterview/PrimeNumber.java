@@ -1,4 +1,4 @@
-package codeproblems;
+package CrackingTheCodingInterview;
 
 class PrimeNumber {
     public boolean isPrime(int n) {
