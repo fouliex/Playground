@@ -12,8 +12,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Clients {
     public static void main(String[] args)  {
-        ApplicationContext context = new ClassPathXmlApplicationContext("file:applicationContext.xml");
-        Vehicle aCar = (Vehicle) context.getBean("mrBeansCar");
-        aCar.crankIgnition();
+//        ApplicationContext context = new ClassPathXmlApplicationContext("file:applicationContext.xml");
+//        Vehicle aCar = (Vehicle) context.getBean("mrBeansCar");
+//        aCar.crankIgnition();
     }
 }
